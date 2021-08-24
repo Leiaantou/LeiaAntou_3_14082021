@@ -1,5 +1,5 @@
 header > .logo > h1 {
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
   text-align: center;
 }
 
@@ -14,8 +14,13 @@ i.fas.fa-arrow-left {
 
 footer {
   background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
   line-height: 27px;
 }
@@ -42,9 +47,15 @@ body {
 
 .place {
   background: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
-  justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .place p {
@@ -58,9 +69,16 @@ body {
 
 .info {
   background: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .info h2,
@@ -78,14 +96,19 @@ button {
   color: white;
   font-weight: bold;
   border: none;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79da));
   background: linear-gradient(0deg, #9356DC, #ff79da);
 }
 
 .howtouse {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #f2f2f2;
   margin: 10px;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   border-radius: 20px;
 }
 
@@ -96,9 +119,15 @@ button {
   width: 25px;
   height: 25px;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: -12px;
   margin-top: 13px;
 }
@@ -122,7 +151,8 @@ button {
 .photo_resto img {
   width: 100%;
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -131,8 +161,8 @@ button {
   background-color: #99e2d0;
   color: #008766;
   font-weight: bold;
-  padding: 0.5rem;
-  border-radius: 0.125rem;
+  padding: .5rem;
+  border-radius: .125rem;
   position: absolute;
   right: 40px;
   margin-top: 10px;
@@ -145,15 +175,25 @@ button {
 }
 
 .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px;
 }
 
 .like {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 1.5rem;
 }
 
@@ -165,6 +205,7 @@ button {
 
 i.fas.fa-heart:active {
   opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79da));
   background: linear-gradient(to bottom, #9356DC 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -183,12 +224,17 @@ i.fas.fa-heart {
 .restaurant_image img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 h3.card_title {
@@ -198,8 +244,12 @@ h3.card_title {
 }
 
 .meal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: white;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -211,8 +261,12 @@ h3.card_title {
 }
 
 .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .description_meal h4, .description_meal p {
@@ -220,7 +274,7 @@ h3.card_title {
 }
 
 .menu_name h2 {
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
 }
 
 .restaurant_menu {
@@ -234,5 +288,4 @@ h3.card_title {
   margin: auto;
   display: block;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
