@@ -1,9 +1,52 @@
 @import "./utils/variables";
 @import "./base/fonts";
-@import "./layout/header"; 
+@import "./layout/header";
 @import "./layout/footer";
 
+.loader{
+    position: absolute;
+   width: 100%;
+   height: 100%;
+    background-color: #ffffff80;
+    animation: loading 0.1s;
+    animation-delay: 2.9s;
+    animation-fill-mode: both;
+}
+.loader_circle{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-top: 5px solid $color-primary;
+    border-right: 5px solid $color-secondary;
+    border-bottom: 5px solid $color-tertiary;
+    border-left: 5px solid $color-primary;
+    border-radius: 50%;
+    animation: spin 3s ease-in-out;
+    animation-iteration-count: 3;
+    width: 100px;
+    height: 100px;
+}
 
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        z-index: -1;
+    }
+}
+@keyframes loading{
+    100%{
+        opacity: 0;
+        }
+}
 
 * {
     text-decoration: none;
@@ -12,6 +55,7 @@
 
 body {
     font-family: $font-text;
+    margin: 0;
 }
 
 .place {
@@ -26,24 +70,14 @@ body {
     font-weight: bold;
 }
 
-.functioning {
-    padding: 20px;
-}
 
 .info {
     background: #f2f2f2;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.info h2,
-.info p {
-    text-align: center;
-}
-
-.info {
     padding: 20px;
+    text-align: center;
 }
 
 button {
@@ -53,9 +87,25 @@ button {
     font-weight: bold;
     border: none;
     background: linear-gradient(0deg, $color-primary, $color-secondary);
+    box-shadow: 5px 5px 5px grey;
+
+    &:hover{
+        background: linear-gradient(0deg, lighten($color-primary, 10%), lighten($color-secondary, 10%));
+        box-shadow: 10px 10px 10px grey;
+    }
 }
 
+.commander__btn{
+    width: 50%;
+}
+
+
+
 .howtouse {
+    padding: 20px;
+}
+
+.howtouse__ligne {
     display: flex;
     background: #f2f2f2;
     margin: 10px;
@@ -63,7 +113,7 @@ button {
     border-radius: 20px;
 }
 
-.number {
+.howtouse__number {
     background: $color-secondary;
     color: white;
     border-radius: 100%;
@@ -77,23 +127,24 @@ button {
     margin-top: 13px;
 }
 
-.functioning i {
+.howtouse i {
     margin-left: 20px;
     margin-right: 8px;
+
 }
 
-#list_restaurants {
+#restaurants {
     background-color: #f2f2f2;
     padding: 20px;
 }
 
-.resto {
+.restaurants__card {
     background-color: white;
     border-radius: 20px;
     margin: 20px 0;
 }
 
-.photo_resto img {
+.restaurants__card--photo img {
     width: 100%;
     height: 150px;
     object-fit: cover;
@@ -101,7 +152,7 @@ button {
     border-top-right-radius: 20px;
 }
 
-.new {
+.restaurants__card--new {
     background-color: $color-tertiary;
     color: #008766;
     font-weight: bold;
@@ -112,26 +163,26 @@ button {
     margin-top: 10px;
 }
 
-.description h3,
-.description p {
+.restaurants__card--description h3,
+.restaurants__card--description p {
     margin: 0;
     padding-left: 10px;
 }
 
-.description {
+.restaurants__card--description {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-.like {
+.restaurants__card--like {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 1.5rem;
 }
 
-.like>i {
+.restaurants__card--like>i {
     font-size: 2rem;
     position: absolute;
     padding: 0.5rem;
@@ -157,58 +208,165 @@ i.fas.fa-heart {
 
 /* pages menus*/
 
-.restaurant_image img{
+.pagemenu__photo img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-.menu_title {
+.pagemenu__title {
     display: flex;
     justify-content: space-between;
 }
 
-h3.card_title {
+.pagemenu__name{
+    font-family: $title-font;
+}
+.pagemenu__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
+.pagemenu__like>i {
+    font-size: 2rem;
+    position: absolute;
+    padding: 0.5rem;
+}
+
+.pagemenu__card {
+    background-color: #f2f2f2;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 20px;
+    position: relative;
+    margin-top: -35px;
+}
+
+
+h3.menu__card--title {
     font-weight: normal;
-    border-bottom: 2px solid $color-tertiary;
-    width: 17%;
+    border-bottom: 2px solid #99e2d0;
+    width: 12%;
 }
 
-.meal {
-    display: flex;
-    justify-content: space-between;
+.menu__card--container {
     background-color: white;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.menu__card--meal {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
     padding: 10px;
 }
 
-.description_meal p {
-    font-size: 13px;
+.menu__card--description {
+    width: 100%;
+    margin-left: -5px;
+    max-width: 100%;
+    overflow: hidden;
 }
 
-.price {
+.menu__card--price {
     display: flex;
     align-items: flex-end;
+    margin-bottom: 4px;
+    margin-right: 1rem;
+    max-width: 100%;
+    font-weight: bold;
 }
 
-.description_meal h4, .description_meal p {
+.menu__card--check {
+    width: 7rem;
+    background: #99e2d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -7rem;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.menu__card--check>i {
+    color: #99e2d0;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: white;
+    transition-duration: 0.5s;
+
+}
+
+.menu__card--description>* {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
     margin: 5px;
 }
 
-.menu_name h2 {
-    font-family: 'Shrikhand';
+input {
+    appearance: none;
+    width: 100%;
+    height: 5.8rem;
+    border-radius: 1rem;
+    position: absolute;
+    cursor: pointer;
+    left: -4px;
 }
 
-
-.restaurant_menu {
-    background-color: #f2f2f2;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 20px;
+input:checked~.menu__card--container .menu__card--check {
+    margin-right: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
-.restaurant_menu button {
+input:checked~.menu__card--container i {
+    margin-right: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transform: rotate(360deg);
+}
+
+.pagemenu__card button {
     margin: auto;
     display: block;
+}
+
+.card1{
+    animation: appear 1.5s cubic-bezier(0, 0, 0, 1) forwards;
+    animation-duration: 3s;
+
+}
+.card2{
+    animation: appear 1.5s cubic-bezier(0, 0, 0, 1) forwards;
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+    
+
+}
+.card3{
+    animation: appear 1.5s cubic-bezier(0, 0, 0, 1) forwards;
+    animation-delay: 1s;
+    animation-duration: 3s;
+
+}
+
+
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
