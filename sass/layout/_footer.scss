@@ -13,8 +13,21 @@ footer i {
     color: white;
 }
 
+i.fas.fa-utensils {
+    font-size: 17px;
+}
+
+i.fas.fa-hands-helping {
+    font-size: 12px;
+}
+
+footer i {
+    margin-right: 6px;
+}
+
 footer span {
     color: white;
     font-family: $title-font;
     margin-bottom: 11px;
+    font-size: large;
 }

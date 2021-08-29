@@ -25,10 +25,23 @@ footer i {
   color: white;
 }
 
+i.fas.fa-utensils {
+  font-size: 17px;
+}
+
+i.fas.fa-hands-helping {
+  font-size: 12px;
+}
+
+footer i {
+  margin-right: 6px;
+}
+
 footer span {
   color: white;
   font-family: "Shrikhand";
   margin-bottom: 11px;
+  font-size: large;
 }
 
 .loader {
@@ -107,11 +120,19 @@ body {
   text-align: center;
 }
 
+h2.info__title {
+  padding: 0 25px;
+}
+
+p.info__subtitle {
+  margin-top: 0;
+}
+
 button {
   border-radius: 30px;
   padding: 15px;
   color: white;
-  font-weight: bold;
+  font-size: 15px;
   border: none;
   background: linear-gradient(0deg, #9356DC, #ff79da);
   box-shadow: 5px 5px 5px grey;
@@ -119,6 +140,12 @@ button {
 button:hover {
   background: linear-gradient(0deg, #ae80e5, #fface8);
   box-shadow: 10px 10px 10px grey;
+}
+
+.info__btn {
+  width: 65%;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .commander__btn {
@@ -135,10 +162,11 @@ button:hover {
   margin: 10px;
   align-items: baseline;
   border-radius: 20px;
+  padding: 10px;
 }
 
 .howtouse__number {
-  background: #ff79da;
+  background: #9356DC;
   color: white;
   border-radius: 100%;
   width: 25px;
@@ -147,18 +175,26 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -12px;
+  margin-left: -20px;
   margin-top: 13px;
 }
 
 .howtouse i {
-  margin-left: 20px;
-  margin-right: 8px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+i.fas.fa-list-ul.howtouse__icon, i.fas.fa-mobile-alt.howtouse__icon {
+  color: grey;
+}
+
+i.fas.fa-store.howtouse__icon {
+  color: #9356DC;
 }
 
 #restaurants {
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 30px 20px;
 }
 
 .restaurants__card {
@@ -211,23 +247,27 @@ button:hover {
   padding: 0.5rem;
 }
 
-i.fas.fa-heart:active {
+i.fas.fa-heart:hover {
   opacity: 1;
+  cursor: pointer;
   background: linear-gradient(to bottom, #9356DC 0%, #ff79da 100%);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation-duration: 3s;
 }
 
 i.fas.fa-heart {
   opacity: 0;
-}
-
-i.fas.fa-heart {
-  opacity: 0;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
 }
 
 /* pages menus*/
+main.pagemenu {
+  margin-top: -10px;
+}
+
 .pagemenu__photo img {
   width: 100%;
   height: 250px;
@@ -241,6 +281,7 @@ i.fas.fa-heart {
 
 .pagemenu__name {
   font-family: "Shrikhand";
+  font-size: large;
 }
 
 .pagemenu__like {
@@ -265,10 +306,19 @@ i.fas.fa-heart {
   margin-top: -35px;
 }
 
+.menu {
+  padding-bottom: 30px;
+}
+
 h3.menu__card--title {
   font-weight: normal;
   border-bottom: 2px solid #99e2d0;
   width: 12%;
+  margin-left: 5px;
+}
+
+.menu__card {
+  margin-bottom: 40px;
 }
 
 .menu__card--container {
@@ -332,6 +382,14 @@ h3.menu__card--title {
   margin: 5px;
 }
 
+.menu__card--description p {
+  font-size: 15px;
+}
+
+.menu__card--description h4 {
+  font-size: 18px;
+}
+
 input {
   appearance: none;
   width: 100%;
@@ -367,13 +425,13 @@ input:checked ~ .menu__card--container i {
 
 .card2 {
   animation: appear 1.5s cubic-bezier(0, 0, 0, 1) forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
   animation-duration: 3s;
 }
 
 .card3 {
   animation: appear 1.5s cubic-bezier(0, 0, 0, 1) forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
   animation-duration: 3s;
 }
 
