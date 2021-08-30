@@ -248,20 +248,31 @@ i.fas.fa-store.howtouse__icon {
   padding: 0.5rem;
 }
 
-i.fas.fa-heart:hover {
-  opacity: 1;
+.btn_like {
+  width: 50px;
+  height: 30px;
+  position: absolute;
   cursor: pointer;
-  background: linear-gradient(to bottom, #9356DC 0%, #ff79da 100%);
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation-duration: 3s;
+  z-index: 1;
+  appearance: none;
 }
 
 i.fas.fa-heart {
   opacity: 0;
-  font-size: 2.3rem;
+  transition-duration: 0.5s;
+  background: linear-gradient(to bottom, #9356DC 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input:checked ~ i.far.fa-heart {
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+input:checked ~ i.fas.fa-heart {
+  transition-duration: 0.5s;
+  opacity: 1;
 }
 
 /* pages menus*/
@@ -356,6 +367,22 @@ h3.menu__card--title {
   font-weight: bold;
 }
 
+.menu__card--description > * {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 5px;
+}
+
+.menu__card--description p {
+  font-size: 15px;
+}
+
+.menu__card--description h4 {
+  font-size: 18px;
+}
+
 .menu__card--check {
   width: 7rem;
   background: #99e2d0;
@@ -375,23 +402,7 @@ h3.menu__card--title {
   transition-duration: 0.5s;
 }
 
-.menu__card--description > * {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  max-width: 100%;
-  margin: 5px;
-}
-
-.menu__card--description p {
-  font-size: 15px;
-}
-
-.menu__card--description h4 {
-  font-size: 18px;
-}
-
-input {
+.btn_check {
   appearance: none;
   width: 100%;
   height: 5.8rem;
