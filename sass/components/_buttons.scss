@@ -28,4 +28,10 @@ button {
 
 .commander__btn {
     width: 50%;
+    @include tablet-only{
+        width: 30%;
+    }
+    @include desktop-only{
+        width: 20%;
+    }
 }

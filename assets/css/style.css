@@ -234,6 +234,16 @@ h3.menu__card--title {
   width: 12%;
   margin-left: 5px;
 }
+@media all and (min-width: 1025px) {
+  h3.menu__card--title {
+    width: 3%;
+  }
+}
+@media all and (min-width: 768px) {
+  h3.menu__card--title {
+    width: 6%;
+  }
+}
 
 .menu__card {
   margin-bottom: 40px;
@@ -370,6 +380,7 @@ h3.menu__card--title {
   cursor: pointer;
   z-index: 1;
   appearance: none;
+  -webkit-tap-highlight-color: white;
 }
 
 i.fas.fa-heart {
@@ -418,6 +429,7 @@ input:checked ~ i.fas.fa-heart {
   position: absolute;
   cursor: pointer;
   left: -4px;
+  z-index: 1;
 }
 
 input:checked ~ .menu__card--container .menu__card--check {
@@ -516,6 +528,16 @@ button:hover {
 
 .commander__btn {
   width: 50%;
+}
+@media all and (min-width: 768px) {
+  .commander__btn {
+    width: 30%;
+  }
+}
+@media all and (min-width: 1025px) {
+  .commander__btn {
+    width: 20%;
+  }
 }
 
 footer {

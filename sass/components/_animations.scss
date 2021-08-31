@@ -80,6 +80,7 @@
     cursor: pointer;
     z-index: 1;
     appearance: none;
+    -webkit-tap-highlight-color: white;
 }
 
 i.fas.fa-heart {
@@ -130,6 +131,7 @@ input:checked~i.fas.fa-heart {
     position: absolute;
     cursor: pointer;
     left: -4px;
+    z-index: 1;
 }
 
 input:checked~.menu__card--container .menu__card--check {
