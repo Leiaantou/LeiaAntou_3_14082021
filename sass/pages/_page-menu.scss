@@ -1,0 +1,106 @@
+main.pagemenu {
+    margin-top: -10px;
+}
+
+.pagemenu__photo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.pagemenu__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagemenu__name {
+    font-family: $font-title;
+    font-size: large;
+}
+
+.pagemenu__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
+.pagemenu__like>i {
+    font-size: 2rem;
+    position: absolute;
+    padding: 0.5rem;
+}
+
+.pagemenu__card {
+    background-color: #f2f2f2;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 20px;
+    position: relative;
+    margin-top: -35px;
+}
+
+.menu {
+    padding-bottom: 30px;
+}
+
+h3.menu__card--title {
+    font-weight: normal;
+    border-bottom: 2px solid #99e2d0;
+    width: 12%;
+    margin-left: 5px;
+}
+
+.menu__card {
+    margin-bottom: 40px;
+}
+
+.menu__card--container {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.menu__card--meal {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.menu__card--description {
+    width: 100%;
+    margin-left: -5px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.menu__card--price {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 4px;
+    margin-right: 1rem;
+    max-width: 100%;
+    font-weight: bold;
+}
+
+.menu__card--description>* {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 5px;
+}
+
+.menu__card--description p {
+    font-size: 15px;
+}
+
+.menu__card--description h4 {
+    font-size: 18px;
+}

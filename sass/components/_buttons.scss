@@ -1,0 +1,31 @@
+/* bouton explorer restaurants et button commander*/
+button {
+    border-radius: 30px;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    background: linear-gradient(0deg, $color-primary, $color-secondary);
+    box-shadow: 5px 5px 5px grey;
+
+    &:hover {
+        background: linear-gradient(0deg, lighten($color-primary, 10%), lighten($color-secondary, 10%));
+        box-shadow: 10px 10px 10px grey;
+    }
+}
+
+/*bouton explorer restaurants*/
+.info__btn {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/*bouton commander*/
+.pagemenu__card button {
+    margin: auto;
+    display: block;
+}
+
+.commander__btn {
+    width: 50%;
+}
