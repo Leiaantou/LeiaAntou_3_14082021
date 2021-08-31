@@ -322,7 +322,7 @@ h3.menu__card--title {
 }
 @media all and (min-width: 1025px) {
   .loader::after {
-    left: 38%;
+    left: 42%;
   }
 }
 
