@@ -55,13 +55,16 @@ footer span {
   animation-fill-mode: both;
 }
 
-.loader_circle {
+.loader_circle, .loader_text {
   position: absolute;
   margin: auto;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+.loader_circle {
   border-top: 5px solid #9356DC;
   border-right: 5px solid #ff79da;
   border-bottom: 5px solid #99e2d0;

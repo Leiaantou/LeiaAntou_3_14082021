@@ -13,13 +13,17 @@
     animation-delay: 2.9s;
     animation-fill-mode: both;
 }
-.loader_circle{
+
+
+.loader_circle, .loader_text{
     position: absolute;
     margin: auto;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+}
+    .loader_circle{
     border-top: 5px solid $color-primary;
     border-right: 5px solid $color-secondary;
     border-bottom: 5px solid $color-tertiary;
