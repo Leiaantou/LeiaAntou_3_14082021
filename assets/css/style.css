@@ -359,6 +359,7 @@ h3.menu__card--title {
 @keyframes loading {
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 /* animation like */
