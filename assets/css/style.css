@@ -219,18 +219,16 @@ main.pagemenu {
   background-color: #f2f2f2;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 20px;
+  padding: 10px;
   position: relative;
   margin-top: -35px;
-}
-
-.menu {
   padding-bottom: 30px;
 }
+
 @media all and (min-width: 1025px) {
   .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -435,14 +433,18 @@ input:checked ~ i.fas.fa-heart {
 
 .btn_check {
   appearance: none;
-  width: 100%;
+  width: 96%;
   height: 5.8rem;
   border-radius: 1rem;
   position: absolute;
   cursor: pointer;
-  left: -4px;
   z-index: 1;
   -webkit-tap-highlight-color: transparent;
+}
+@media all and (min-width: 1025px) {
+  .btn_check {
+    width: 50%;
+  }
 }
 
 input:checked ~ .menu__card--container .menu__card--check {
@@ -461,55 +463,57 @@ input:checked ~ .menu__card--container i {
 /* animation apparition progressive des plats */
 .menu__card--container {
   animation: move 1s cubic-bezier(0, 0, 0, 1) forwards;
+  transform: scale(0);
 }
 
 .container1 {
-  animation-delay: 0.15s;
+  animation-delay: 0s;
 }
 
 .container2 {
-  animation-delay: 0.3s;
+  animation-delay: 0.1s;
 }
 
 .container3 {
-  animation-delay: 0.45s;
+  animation-delay: 0.2s;
 }
 
 .container4 {
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 
 .container5 {
-  animation-delay: 1.15s;
+  animation-delay: 0.4s;
 }
 
 .container6 {
-  animation-delay: 1.3s;
+  animation-delay: 0.5s;
 }
 
 .container7 {
-  animation-delay: 1.45s;
+  animation-delay: 0.6s;
 }
 
 .container8 {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .container9 {
-  animation-delay: 2.15s;
+  animation-delay: 1.1s;
 }
 
 .container10 {
-  animation-delay: 2.3s;
+  animation-delay: 1.2s;
 }
 
 @keyframes move {
   0% {
     opacity: 0;
-    transform: translateY(45px);
+    transform: scale(0);
   }
   100% {
     opacity: 1;
+    transform: scale(1);
   }
 }
 /* bouton explorer restaurants et button commander*/
@@ -549,7 +553,7 @@ button:hover {
 }
 @media all and (min-width: 1025px) {
   .commander__btn {
-    width: 20%;
+    width: 15%;
   }
 }
 
@@ -583,6 +587,11 @@ footer span {
   font-family: "Shrikhand";
   margin-bottom: 11px;
   font-size: large;
+}
+
+body {
+  max-width: 1500px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

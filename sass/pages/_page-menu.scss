@@ -35,16 +35,16 @@ main.pagemenu {
     background-color: #f2f2f2;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    padding: 20px;
+    padding: 10px;
     position: relative;
     margin-top: -35px;
+    padding-bottom: 30px
 }
 
 .menu {
-    padding-bottom: 30px;
     @include desktop-only{
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
     }
 }
 .menu__card.card1, .menu__card.card2{

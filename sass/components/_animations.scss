@@ -111,7 +111,7 @@ input:checked~i.fas.fa-heart {
     justify-content: center;
     align-items: center;
     margin-right: -7rem;
-    transition-duration: 0.5s;
+   transition-duration: 0.5s;
     transition-timing-function: ease;
 }
 
@@ -125,18 +125,20 @@ input:checked~i.fas.fa-heart {
 
 .btn_check {
     appearance: none;
-    width: 100%;
+    width: 96%;
     height: 5.8rem;
     border-radius: 1rem;
     position: absolute;
     cursor: pointer;
-    left: -4px;
     z-index: 1;
     -webkit-tap-highlight-color: transparent;
+    @include desktop-only{
+        width: 50%;
+    }
 }
 
 input:checked~.menu__card--container .menu__card--check {
-    margin-right: 0;
+ margin-right: 0;
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
@@ -151,57 +153,60 @@ input:checked~.menu__card--container i {
 
 /* animation apparition progressive des plats */
 .menu__card--container {
-    animation: move 1s cubic-bezier(0, 0, 0, 1) forwards;
+    animation: move 1s cubic-bezier(0,0,0,1) forwards;
+    transform: scale(0);
+
 }
 
 .container1 {
-    animation-delay: 0.15s;
+    animation-delay: 0s;
 }
 
 .container2 {
-    animation-delay: 0.30s;
+    animation-delay: 0.10s;
 }
 
 .container3 {
-    animation-delay: 0.45s;
+    animation-delay: 0.20s;
 }
 
 .container4 {
-    animation-delay: 1s;
+    animation-delay: 0.30s;
 }
 
 .container5 {
-    animation-delay: 1.15s;
+    animation-delay: 0.40s;
 }
 
 .container6 {
-    animation-delay: 1.30s;
+    animation-delay: 0.50s;
 }
 
 .container7 {
-    animation-delay: 1.45s;
+    animation-delay: 0.60s;
 }
 
 .container8 {
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .container9 {
-    animation-delay: 2.15s;
+    animation-delay: 1.10s;
 }
 
 .container10 {
-    animation-delay: 2.30s;
+    animation-delay: 1.20s;
 }
 
 @keyframes move {
     0% {
         opacity: 0;
-        transform: translateY(45px);
+        transform: scale(0);
     }
 
     100% {
 
         opacity: 1;
+        transform: scale(1);
     }
 }
