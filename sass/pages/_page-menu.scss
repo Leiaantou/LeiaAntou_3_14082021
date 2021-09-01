@@ -42,8 +42,16 @@ main.pagemenu {
 
 .menu {
     padding-bottom: 30px;
+    @include desktop-only{
+display: flex;
+justify-content: space-between;
+    }
 }
-
+.menu__card.card1, .menu__card.card2{
+    @include desktop-only{
+margin-right: 10px;
+    }
+}
 h3.menu__card--title {
     font-weight: normal;
     border-bottom: 2px solid #99e2d0;

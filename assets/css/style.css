@@ -227,6 +227,18 @@ main.pagemenu {
 .menu {
   padding-bottom: 30px;
 }
+@media all and (min-width: 1025px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .menu__card.card1, .menu__card.card2 {
+    margin-right: 10px;
+  }
+}
 
 h3.menu__card--title {
   font-weight: normal;
@@ -380,7 +392,7 @@ h3.menu__card--title {
   cursor: pointer;
   z-index: 1;
   appearance: none;
-  -webkit-tap-highlight-color: white;
+  -webkit-tap-highlight-color: transparent;
 }
 
 i.fas.fa-heart {
@@ -430,6 +442,7 @@ input:checked ~ i.fas.fa-heart {
   cursor: pointer;
   left: -4px;
   z-index: 1;
+  -webkit-tap-highlight-color: transparent;
 }
 
 input:checked ~ .menu__card--container .menu__card--check {
