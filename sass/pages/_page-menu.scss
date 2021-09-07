@@ -6,6 +6,9 @@ main.pagemenu {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    @include desktop-only{
+        height: 315px;
+    }
 }
 
 .pagemenu__title {

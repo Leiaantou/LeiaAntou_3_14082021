@@ -18,6 +18,9 @@ button {
 .info__btn {
     margin-top: 10px;
     margin-bottom: 30px;
+    @include desktop-only{
+        width: 18%;
+    }
 }
 
 /*bouton commander*/
