@@ -14,6 +14,10 @@ main.pagemenu {
 .pagemenu__title {
     display: flex;
     justify-content: space-between;
+    @include desktop-only{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 .pagemenu__name {
@@ -42,6 +46,15 @@ main.pagemenu {
     position: relative;
     margin-top: -35px;
     padding-bottom: 30px
+}
+
+.checkbox_container{
+    margin: auto;
+    position: relative;
+    @include desktop-only{
+    width: 28rem;
+    max-width: 28rem;
+}
 }
 
 .menu {

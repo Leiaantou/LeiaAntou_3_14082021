@@ -6,6 +6,12 @@ footer {
     flex-direction: column;
     padding: 20px;
     line-height: 27px;
+    @include tablet-only{
+        padding-left: 40px;
+    }    
+    @include desktop-only{
+        padding-left: 50px;
+    }
 }
 
 footer a,

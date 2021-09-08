@@ -36,10 +36,16 @@ h2.info__title {
 
 p.info__subtitle {
     margin-top: 0;
+    @include desktop-only{
+        font-size: large;
+    }
 }
 
 .howtouse {
     padding: 20px;
+    @include desktop-only{
+        margin-bottom: 20px;
+}
 }
 
 .howtouse h2{
@@ -138,6 +144,9 @@ h2.restaurants__title {
     @include desktop-only{
         justify-content: space-around;
     }
+    @include largescreen-only{
+        flex-wrap: nowrap;
+    }
 }
 .restaurants__card {
     background-color: white;
@@ -149,6 +158,9 @@ h2.restaurants__title {
     }
     @include desktop-only{
             width: 46%;
+    }
+    @include largescreen-only{
+        width: 23%;
     }
 }
 

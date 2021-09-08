@@ -27,7 +27,10 @@
     top: 55%;
     }
     @include desktop-only{
-        left:44%
+        left:41%
+    }
+    @include largescreen-only{
+        left: 44%;
     }
 }
 
@@ -132,9 +135,6 @@ input:checked~i.fas.fa-heart {
     cursor: pointer;
     z-index: 1;
     -webkit-tap-highlight-color: transparent;
-    @include desktop-only{
-        width: 50%;
-    }
 }
 
 input:checked~.menu__card--container .menu__card--check {

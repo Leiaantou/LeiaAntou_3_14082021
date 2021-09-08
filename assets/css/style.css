@@ -50,9 +50,19 @@ h2.info__title {
 p.info__subtitle {
   margin-top: 0;
 }
+@media all and (min-width: 1025px) {
+  p.info__subtitle {
+    font-size: large;
+  }
+}
 
 .howtouse {
   padding: 20px;
+}
+@media all and (min-width: 1025px) {
+  .howtouse {
+    margin-bottom: 20px;
+  }
 }
 
 @media all and (min-width: 1025px) {
@@ -164,6 +174,11 @@ i.fas.fa-store.howtouse__icon {
     justify-content: space-around;
   }
 }
+@media all and (min-width: 1550px) {
+  .cards {
+    flex-wrap: nowrap;
+  }
+}
 
 .restaurants__card {
   background-color: white;
@@ -179,6 +194,11 @@ i.fas.fa-store.howtouse__icon {
 @media all and (min-width: 1025px) {
   .restaurants__card {
     width: 46%;
+  }
+}
+@media all and (min-width: 1550px) {
+  .restaurants__card {
+    width: 23%;
   }
 }
 
@@ -254,6 +274,12 @@ main.pagemenu {
   display: flex;
   justify-content: space-between;
 }
+@media all and (min-width: 1025px) {
+  .pagemenu__title {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 
 .pagemenu__name {
   font-family: "Shrikhand";
@@ -281,6 +307,17 @@ main.pagemenu {
   position: relative;
   margin-top: -35px;
   padding-bottom: 30px;
+}
+
+.checkbox_container {
+  margin: auto;
+  position: relative;
+}
+@media all and (min-width: 1025px) {
+  .checkbox_container {
+    width: 28rem;
+    max-width: 28rem;
+  }
 }
 
 @media all and (min-width: 1025px) {
@@ -400,6 +437,11 @@ h3.menu__card--title {
 }
 @media all and (min-width: 1025px) {
   .loader::after {
+    left: 41%;
+  }
+}
+@media all and (min-width: 1550px) {
+  .loader::after {
     left: 44%;
   }
 }
@@ -498,11 +540,6 @@ input:checked ~ i.fas.fa-heart {
   cursor: pointer;
   z-index: 1;
   -webkit-tap-highlight-color: transparent;
-}
-@media all and (min-width: 1025px) {
-  .btn_check {
-    width: 50%;
-  }
 }
 
 input:checked ~ .menu__card--container .menu__card--check {
@@ -626,6 +663,16 @@ footer {
   flex-direction: column;
   padding: 20px;
   line-height: 27px;
+}
+@media all and (min-width: 768px) {
+  footer {
+    padding-left: 40px;
+  }
+}
+@media all and (min-width: 1025px) {
+  footer {
+    padding-left: 50px;
+  }
 }
 
 footer a,
