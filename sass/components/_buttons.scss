@@ -6,11 +6,12 @@ button {
     font-size: 15px;
     border: none;
     background: linear-gradient(0deg, $color-primary, $color-secondary);
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 30%);
+    cursor: pointer;
 
     &:hover {
-        background: linear-gradient(0deg, lighten($color-primary, 10%), lighten($color-secondary, 10%));
-        box-shadow: 10px 10px 10px grey;
+        background: linear-gradient(0deg, lighten($color-primary, 10%), lighten($color-secondary, 5%));
+        box-shadow: 10px 10px 10px rgb(0 0 0 / 40%);
     }
 }
 
@@ -18,8 +19,9 @@ button {
 .info__btn {
     margin-top: 10px;
     margin-bottom: 30px;
-    @include desktop-only{
-        width: 18%;
+
+    @include desktop-only {
+        font-size: larger;
     }
 }
 
@@ -31,10 +33,12 @@ button {
 
 .commander__btn {
     width: 50%;
-    @include tablet-only{
+
+    @include tablet-only {
         width: 30%;
     }
-    @include desktop-only{
+
+    @include desktop-only {
         width: 15%;
     }
 }

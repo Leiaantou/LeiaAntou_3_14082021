@@ -27,6 +27,7 @@ body {
   display: flex;
   align-items: baseline;
   justify-content: center;
+  margin-top: -15px;
 }
 
 .place p {
@@ -35,7 +36,7 @@ body {
 }
 
 .info {
-  background: #f2f2f2;
+  background: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +51,7 @@ h2.info__title {
 p.info__subtitle {
   margin-top: 0;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   p.info__subtitle {
     font-size: large;
   }
@@ -59,37 +60,51 @@ p.info__subtitle {
 .howtouse {
   padding: 20px;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .howtouse {
     margin-bottom: 20px;
   }
 }
 
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .howtouse h2 {
     margin-left: 40px;
   }
 }
 
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .howtouse__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
 }
+@media all and (min-width: 1550px) {
+  .howtouse__list {
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+}
 
 .howtouse__ligne {
   display: flex;
-  background: #f2f2f2;
+  background: #f6f6f6;
   margin: 10px;
+  margin-bottom: 20px;
   align-items: baseline;
   border-radius: 20px;
   padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .howtouse__ligne {
-    padding: 20px 50px;
+    padding: 10px 20px;
+  }
+}
+@media all and (min-width: 1550px) {
+  .howtouse__ligne {
+    width: 20%;
+    font-size: larger;
   }
 }
 
@@ -106,40 +121,43 @@ p.info__subtitle {
   margin-left: -20px;
   margin-top: 13px;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .howtouse__number {
     width: 35px;
     height: 35px;
-    margin-left: -67px;
+    margin-left: -35px;
     margin-top: 13px;
-  }
-}
-
-@media all and (min-width: 1025px) {
-  span.howtouse__number {
     font-size: larger;
   }
 }
+@media all and (min-width: 1550px) {
+  .howtouse__number {
+    margin-top: 20px;
+  }
+}
 
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   p.text {
     font-size: larger;
+    white-space: nowrap;
   }
 }
 
 .howtouse i {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 20px;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .howtouse i {
-    margin-left: 0;
     font-size: larger;
   }
 }
 
-i.fas.fa-list-ul.howtouse__icon,
 i.fas.fa-mobile-alt.howtouse__icon {
+  font-size: large;
+  color: grey;
+}
+
+i.fas.fa-list-ul.howtouse__icon {
   color: grey;
 }
 
@@ -148,7 +166,7 @@ i.fas.fa-store.howtouse__icon {
 }
 
 #restaurants {
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   padding: 30px 20px;
 }
 
@@ -157,7 +175,7 @@ i.fas.fa-store.howtouse__icon {
     margin-left: 20px;
   }
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   h2.restaurants__title {
     margin-left: 40px;
   }
@@ -169,7 +187,7 @@ i.fas.fa-store.howtouse__icon {
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .cards {
     justify-content: space-around;
   }
@@ -191,9 +209,9 @@ i.fas.fa-store.howtouse__icon {
     margin: 20px;
   }
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .restaurants__card {
-    width: 46%;
+    width: 45%;
   }
 }
 @media all and (min-width: 1550px) {
@@ -208,12 +226,12 @@ i.fas.fa-store.howtouse__icon {
 
 .restaurants__card--photo img {
   width: 100%;
-  height: 150px;
+  height: 192px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .restaurants__card--photo img {
     height: 230px;
   }
@@ -239,7 +257,7 @@ i.fas.fa-store.howtouse__icon {
 .restaurants__card--description {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 10px 20px;
 }
 
 .restaurants__card--like {
@@ -264,7 +282,7 @@ main.pagemenu {
   height: 250px;
   object-fit: cover;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .pagemenu__photo img {
     height: 315px;
   }
@@ -274,7 +292,7 @@ main.pagemenu {
   display: flex;
   justify-content: space-between;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .pagemenu__title {
     margin-left: 20px;
     margin-right: 20px;
@@ -284,6 +302,7 @@ main.pagemenu {
 .pagemenu__name {
   font-family: "Shrikhand";
   font-size: large;
+  margin-left: 5px;
 }
 
 .pagemenu__like {
@@ -300,7 +319,7 @@ main.pagemenu {
 }
 
 .pagemenu__card {
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   padding: 10px;
@@ -313,33 +332,41 @@ main.pagemenu {
   margin: auto;
   position: relative;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .checkbox_container {
-    width: 28rem;
-    max-width: 28rem;
+    width: 19rem;
+    max-width: 19rem;
+  }
+}
+@media all and (min-width: 1550px) {
+  .checkbox_container {
+    width: 40rem;
+    max-width: 40rem;
   }
 }
 
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .menu {
     display: flex;
     justify-content: space-around;
   }
 }
 
-@media all and (min-width: 1025px) {
-  .menu__card.card1, .menu__card.card2 {
+@media all and (min-width: 1024px) {
+  .menu__card.card1,
+.menu__card.card2 {
     margin-right: 10px;
   }
 }
 
 h3.menu__card--title {
   font-weight: normal;
-  border-bottom: 2px solid #99e2d0;
+  border-bottom: 3px solid #99e2d0;
   width: 12%;
   margin-left: 5px;
+  padding-bottom: 5px;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   h3.menu__card--title {
     width: 3%;
   }
@@ -407,14 +434,14 @@ h3.menu__card--title {
 /* loader page d'accueil*/
 .loader {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: grey;
+  background-color: RGBA(128, 129, 128, 0.9);
   animation: loading 0.1s;
   animation-delay: 2.9s;
   animation-fill-mode: both;
@@ -423,43 +450,20 @@ h3.menu__card--title {
 .loader::after {
   content: "Ohmyfood";
   font-family: "Shrikhand";
-  position: absolute;
-  left: 60px;
-  top: 355px;
+  position: fixed;
+  z-index: 2;
   font-size: xxx-large;
   color: white;
 }
-@media all and (min-width: 768px) {
-  .loader::after {
-    left: 33%;
-    top: 55%;
-  }
-}
-@media all and (min-width: 1025px) {
-  .loader::after {
-    left: 41%;
-  }
-}
-@media all and (min-width: 1550px) {
-  .loader::after {
-    left: 44%;
-  }
-}
 
 .loader_circle {
-  position: absolute;
-  margin: auto;
-  top: -120px;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  position: fixed;
   border-top: 10px dotted #9356DC;
   border-right: 10px dotted #ff79da;
   border-bottom: 10px dotted #99e2d0;
   border-left: 10px dotted #9356DC;
   border-radius: 50%;
-  animation: spin 3s ease-in-out;
-  animation-iteration-count: 3;
+  animation: spin 3s ease-in-out forwards;
   width: 100px;
   height: 100px;
 }
@@ -468,11 +472,8 @@ h3.menu__card--title {
   0% {
     transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(360deg);
-  }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
     z-index: -1;
   }
 }
@@ -619,11 +620,12 @@ button {
   font-size: 15px;
   border: none;
   background: linear-gradient(0deg, #9356DC, #ff79da);
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 button:hover {
-  background: linear-gradient(0deg, #ae80e5, #fface8);
-  box-shadow: 10px 10px 10px grey;
+  background: linear-gradient(0deg, #ae80e5, #ff93e1);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 /*bouton explorer restaurants*/
@@ -631,9 +633,9 @@ button:hover {
   margin-top: 10px;
   margin-bottom: 30px;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .info__btn {
-    width: 18%;
+    font-size: larger;
   }
 }
 
@@ -651,7 +653,7 @@ button:hover {
     width: 30%;
   }
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .commander__btn {
     width: 15%;
   }
@@ -669,7 +671,7 @@ footer {
     padding-left: 40px;
   }
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   footer {
     padding-left: 50px;
   }
