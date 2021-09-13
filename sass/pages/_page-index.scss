@@ -21,7 +21,6 @@ body {
     font-weight: bold;
 }
 
-
 .info {
     background: rgb(246, 246, 246);
     display: flex;
@@ -61,13 +60,12 @@ p.info__subtitle {
     @include desktop-only {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-left: 36px;
         margin-right: 36px;
     }
 
     @include largescreen-only {
-        justify-content: space-between;
         margin: 0 20px;
     }
 }
@@ -88,7 +86,6 @@ p.info__subtitle {
 
     @include largescreen-only {
         width: 20%;
-        font-size: larger;
     }
 }
 

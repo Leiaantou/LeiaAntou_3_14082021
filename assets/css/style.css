@@ -78,14 +78,13 @@ p.info__subtitle {
   .howtouse__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 36px;
     margin-right: 36px;
   }
 }
 @media all and (min-width: 1550px) {
   .howtouse__list {
-    justify-content: space-between;
     margin: 0 20px;
   }
 }
@@ -108,7 +107,6 @@ p.info__subtitle {
 @media all and (min-width: 1550px) {
   .howtouse__ligne {
     width: 20%;
-    font-size: larger;
   }
 }
 
