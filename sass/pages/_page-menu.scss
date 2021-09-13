@@ -54,16 +54,6 @@ main.pagemenu {
 .checkbox_container {
     margin: auto;
     position: relative;
-
-    @include desktop-only {
-        width: 19rem;
-        max-width: 19rem;
-    }
-
-    @include largescreen-only {
-        width: 40rem;
-        max-width: 40rem;
-    }
 }
 
 .menu {

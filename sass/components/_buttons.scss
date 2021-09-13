@@ -1,4 +1,4 @@
-/* bouton explorer restaurants et button commander*/
+/* bouton explorer restaurants et button commander
 button {
     border-radius: 30px;
     padding: 15px;
@@ -13,32 +13,42 @@ button {
         background: linear-gradient(0deg, lighten($color-primary, 10%), lighten($color-secondary, 5%));
         box-shadow: 10px 10px 10px rgb(0 0 0 / 40%);
     }
-}
+}*/
 
 /*bouton explorer restaurants*/
-.info__btn {
+.btn__info {
+    @include bouton;
     margin-top: 10px;
     margin-bottom: 30px;
+
+    &:hover {
+        @include bouton-hover;
+    }
 
     @include desktop-only {
         font-size: larger;
     }
+
+
 }
+
 
 /*bouton commander*/
-.pagemenu__card button {
+.btn__commander {
+    @include bouton;
+    width: 50%;
     margin: auto;
     display: block;
-}
-
-.commander__btn {
-    width: 50%;
 
     @include tablet-only {
         width: 30%;
     }
 
     @include desktop-only {
-        width: 15%;
+        width: 20%;
+    }
+
+    &:hover {
+        @include bouton-hover;
     }
 }
