@@ -23,7 +23,7 @@ main.pagemenu {
 }
 
 .pagemenu__name {
-    font-family: $font-title;
+    font-family: $font-title, cursive;
     font-size: large;
     margin-left: 5px;
 }
@@ -42,7 +42,7 @@ main.pagemenu {
 }
 
 .pagemenu__card {
-    background-color: rgb(246, 246, 246);
+    background-color: $color-bg-light;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 10px;

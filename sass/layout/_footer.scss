@@ -1,5 +1,5 @@
 footer {
-    background-color: #353535;
+    background-color: $color-bg-dark;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -42,7 +42,7 @@ footer i {
 
 footer span {
     color: white;
-    font-family: $font-title;
+    font-family: $font-title, cursive;
     margin-bottom: 11px;
     font-size: large;
 

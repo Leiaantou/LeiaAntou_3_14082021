@@ -4,12 +4,12 @@
 }
 
 body {
-    font-family: $font-text;
+    font-family: $font-text, sans-serif;
     margin: 0;
 }
 
 .place {
-    background: rgb(234, 234, 234);
+    background: $color-bg-place;
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
 }
 
 .info {
-    background: rgb(246, 246, 246);
+    background: $color-bg-light;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +72,7 @@ p.info__subtitle {
 
 .howtouse__ligne {
     display: flex;
-    background: rgb(246, 246, 246);
+    background: $color-bg-light;
     margin: 10px;
     margin-bottom: 20px;
     align-items: baseline;
@@ -126,7 +126,7 @@ i.fas.fa-store.howtouse__icon {
 }
 
 #restaurants {
-    background-color: rgb(246, 246, 246);
+    background-color: $color-bg-light;
     padding: 30px 20px;
 }
 
