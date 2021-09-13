@@ -79,6 +79,8 @@ p.info__subtitle {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 36px;
+    margin-right: 36px;
   }
 }
 @media all and (min-width: 1550px) {
@@ -125,33 +127,12 @@ p.info__subtitle {
 }
 @media all and (min-width: 1024px) {
   .howtouse__number {
-    width: 35px;
-    height: 35px;
     margin-left: -35px;
-    margin-top: 13px;
-    font-size: larger;
-  }
-}
-@media all and (min-width: 1550px) {
-  .howtouse__number {
-    margin-top: 20px;
-  }
-}
-
-@media all and (min-width: 1024px) {
-  p.text {
-    font-size: larger;
-    white-space: nowrap;
   }
 }
 
 .howtouse i {
   margin: 0 20px;
-}
-@media all and (min-width: 1024px) {
-  .howtouse i {
-    font-size: larger;
-  }
 }
 
 i.fas.fa-mobile-alt.howtouse__icon {
