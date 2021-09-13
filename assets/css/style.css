@@ -315,7 +315,7 @@ main.pagemenu {
 }
 @media all and (min-width: 1024px) {
   .checkbox_container {
-    min-width: 20rem;
+    width: 20rem;
   }
 }
 @media all and (min-width: 1550px) {

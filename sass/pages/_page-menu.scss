@@ -55,7 +55,7 @@ main.pagemenu {
     margin: auto;
     position: relative;
     @include desktop-only{
-        min-width: 20rem;
+        width: 20rem;
     }
     @include largescreen-only{
         min-width: 30rem;
