@@ -315,6 +315,16 @@ main.pagemenu {
   margin: auto;
   position: relative;
 }
+@media all and (min-width: 1024px) {
+  .checkbox_container {
+    max-width: 18rem;
+  }
+}
+@media all and (min-width: 1550px) {
+  .checkbox_container {
+    max-width: 100%;
+  }
+}
 
 @media all and (min-width: 1024px) {
   .menu {
