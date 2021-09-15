@@ -16,9 +16,25 @@ body {
     margin-top: -15px;
 }
 
-.place p {
-    margin-left: 10px;
-    font-weight: bold;
+input[type=text]{
+    outline: none;
+}
+.localisation{
+    border: none;
+    background: #f3f3f3;
+    font-size: 18px;
+ font-family: $font-text;
+    text-align: center;
+}
+
+.localisation:hover{
+    border: none;
+}
+
+i.fas.fa-map-marker-alt {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 27px;
 }
 
 .info {
@@ -89,6 +105,11 @@ p.info__subtitle {
     }
 }
 
+.howtouse__ligne:hover{
+    background-color: #f5edff;
+    cursor: pointer;
+}
+
 .howtouse__number {
     background: $color-primary;
     color: white;
@@ -113,15 +134,14 @@ p.info__subtitle {
 }
 
 i.fas.fa-mobile-alt.howtouse__icon {
-    font-size: large;
+    font-size: large; 
+}
+
+i.howtouse__icon {
     color: grey;
 }
 
-i.fas.fa-list-ul.howtouse__icon {
-    color: grey;
-}
-
-i.fas.fa-store.howtouse__icon {
+.howtouse__ligne:hover> i {
     color: $color-primary;
 }
 
