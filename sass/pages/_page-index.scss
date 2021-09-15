@@ -16,18 +16,19 @@ body {
     margin-top: -15px;
 }
 
-input[type=text]{
+input[type=text] {
     outline: none;
 }
-.localisation{
+
+.localisation {
     border: none;
     background: #f3f3f3;
     font-size: 18px;
- font-family: $font-text;
+    font-family: $font-text;
     text-align: center;
 }
 
-.localisation:hover{
+.localisation:hover {
     border: none;
 }
 
@@ -105,7 +106,7 @@ p.info__subtitle {
     }
 }
 
-.howtouse__ligne:hover{
+.howtouse__ligne:hover {
     background-color: #f5edff;
     cursor: pointer;
 }
@@ -134,14 +135,14 @@ p.info__subtitle {
 }
 
 i.fas.fa-mobile-alt.howtouse__icon {
-    font-size: large; 
+    font-size: large;
 }
 
 i.howtouse__icon {
     color: grey;
 }
 
-.howtouse__ligne:hover> i {
+.howtouse__ligne:hover>i {
     color: $color-primary;
 }
 
